@@ -1,0 +1,7 @@
+apple 5 11/2/21
+pear 3 10/14/21
+Xbox 2 9/13/20
+Playstation 3 10/2/21
+Mouse 10 8/15/21
+Shoes 12 9/21/21
+Pen 9 1/23/21
