@@ -11,6 +11,7 @@ def main():
         inventory_list.append(line.split())
     #send_sorted("date")
     #remove("Pear")
+    update_quantity("Xbox", 21)
 
 
 def send_sorted(mode):
@@ -28,10 +29,17 @@ def send_sorted(mode):
 
 def remove(name):
     #print (inventory_list)
-    print('\n')
+    #print('\n')
     x = [x for x in inventory_list if name in x][0]
     inventory_list.pop(inventory_list.index(x))
     #print(inventory_list)
 
+
+def update_quantity(name, quantity):
+    print (inventory_list)
+    print('\n')
+    x = [x for x in inventory_list if name in x][0]
+    inventory_list[inventory_list.index(x)][1] = quantity
+    print(inventory_list)
 
 main()
