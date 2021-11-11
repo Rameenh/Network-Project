@@ -13,7 +13,8 @@ def send_sorted():
     for line in row:
         inventory_list.append(line.split())
 
-    for x in range(len(inventory_list)):
-        print(inventory_list[x])
+    sorted_name = sorted(inventory_list, key=lambda x: x[0])
+
+    print(sorted_name)
 
 main()
