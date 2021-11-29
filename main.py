@@ -16,7 +16,7 @@ def main():
 
     serverSocket = socket(AF_INET, SOCK_STREAM)
     webPort = 65432
-    serverSocket.bind(('192.168.1.11', webPort))
+    serverSocket.bind(('10.0.0.1', webPort))
 
     serverSocket.listen(5)
 
