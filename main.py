@@ -58,7 +58,7 @@ def send_sorted(mode):
         return sorted(inventory_list, key=lambda x: x[0])
     elif mode == 'quantity':
         return sorted(inventory_list, key=lambda x: int(x[1]))
-    elif mode == 'date':
+    elif mode == 'inventory_date':
         return sorted(inventory_list, key=lambda x: datetime.strptime(x[2], '%m-%d-%Y'))
     else:
         print("Invalid mode specified for sort function")
